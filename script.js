@@ -4,6 +4,8 @@
 // =====================
 let gMapInstance = null;
 const districtPolygons = []; // { name, polygon, bounds, center, color }
+const uchastkaMarkers = [];  // Google Maps Marker instances for uchastkalar
+const radarMarkers = [];     // Google Maps Marker instances for radars
 let onDistrictClick = null;  // set by DOMContentLoaded once app is ready
 let onUchastkaClick = null;  // set by DOMContentLoaded once app is ready
 let isProgrammaticZoom = false;
@@ -39,6 +41,31 @@ function createUchastkaIcon(num) {
     scaledSize: new google.maps.Size(34, 34),
     anchor: new google.maps.Point(17, 17),
   };
+}
+
+// Radar marker icon using radar.png
+function createRadarIcon() {
+  return {
+    url: "icon/radar.png",
+    scaledSize: new google.maps.Size(22, 32),
+    anchor: new google.maps.Point(16, 16),
+  };
+}
+
+function showRadarMarkers() {
+  radarMarkers.forEach((m) => m.setMap(gMapInstance));
+}
+
+function hideRadarMarkers() {
+  radarMarkers.forEach((m) => m.setMap(null));
+}
+
+function showUchastkaMarkers() {
+  uchastkaMarkers.forEach((m) => m.setMap(gMapInstance));
+}
+
+function hideUchastkaMarkers() {
+  uchastkaMarkers.forEach((m) => m.setMap(null));
 }
 
 function selectDistrictOnMap(tumanName) {
@@ -153,13 +180,20 @@ window.initMap = async function () {
   ];
 
   // Load region, uchastkalar + all districts in parallel (after map is live)
-  const load = (path) => fetch(path).then((r) => r.json()).catch(() => null);
+  const load = (path) => fetch(path).then((r) => r.json()).catch((e) => { console.warn("load failed:", path, e); return null; });
 
-  const [regionGeoJson, uchastkalarData, ...districtGeoJsons] = await Promise.all([
-    load("geojson/region.geojson"),
-    load("data/uchastkalar.json"),
-    ...DISTRICTS.map((d) => load(`geojson/${d.file}.geojson`)),
-  ]);
+  let regionGeoJson, uchastkalarData, radarsData, districtGeoJsons;
+  try {
+    [regionGeoJson, uchastkalarData, radarsData, ...districtGeoJsons] = await Promise.all([
+      load("geojson/region.geojson"),
+      load("data/uchastkalar.json"),
+      load("data/radars.json"),
+      ...DISTRICTS.map((d) => load(`geojson/${d.file}.geojson`)),
+    ]);
+  } catch (e) {
+    console.error("initMap data load error:", e);
+    return;
+  }
 
   // Helper: extract outer ring from Polygon / Feature / FeatureCollection
   function extractRing(gj) {
@@ -217,14 +251,14 @@ window.initMap = async function () {
     });
   });
 
-  // ---- Uchastka markers (numbered circles) ----
+  // ---- Uchastka markers (numbered circles, hidden initially) ----
   if (Array.isArray(uchastkalarData)) {
     uchastkalarData.forEach((u) => {
       if (!u.coordinates) return;
       const [lat, lng] = u.coordinates;
       const marker = new google.maps.Marker({
         position: { lat, lng },
-        map: gMap,
+        map: null, // hidden until "Umumiy" tab is active
         icon: createUchastkaIcon(u.id),
         title: u.title,
         zIndex: 10,
@@ -233,6 +267,25 @@ window.initMap = async function () {
         zoomToUchastka(lat, lng);
         if (onUchastkaClick) onUchastkaClick(u.id);
       });
+      uchastkaMarkers.push(marker);
+    });
+    // Default tab is "Umumiy" — show uchastka markers immediately
+    showUchastkaMarkers();
+  }
+
+  // ---- Radar markers (hidden by default, shown on "Radar" tab) ----
+  if (Array.isArray(radarsData)) {
+    radarsData.forEach((r) => {
+      if (!r.coordinates || r.coordinates.length < 2) return;
+      const [lat, lng] = r.coordinates;
+      const marker = new google.maps.Marker({
+        position: { lat, lng },
+        map: null, // hidden initially
+        icon: createRadarIcon(),
+        title: `${r.type}: ${r.name}`,
+        zIndex: 9,
+      });
+      radarMarkers.push(marker);
     });
   }
 
@@ -431,7 +484,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   function renderRadarRight() {
     const items = radarList
-      .map((item, index) => `<li><strong>${index + 1}.</strong> ${escapeHTML(item)}</li>`)
+      .map((item, index) => {
+        const type = escapeHTML(item.type || "");
+        const name = escapeHTML(item.name || "");
+        return `<li><strong>${index + 1}.</strong> <em>${type}</em> — ${name}</li>`;
+      })
       .join("");
 
     return `
@@ -587,6 +644,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (!validKeys.includes(key)) return;
 
     hideUchastkaMapOverlay();
+    hideRadarMarkers();
+    hideUchastkaMarkers();
     resetMapToUmumiy(); // zoom out to full region on every top-tab tap
     bottomMapButtons.forEach((b) => b.classList.remove("active"));
     const activeBtn = document.querySelector(`.button-container .btn[data-map="${key}"]`);
@@ -595,12 +654,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (key === "umumiy") {
       createLeftButtons(Array.from({ length: 14 }, (_, i) => `Uchastka ${i + 1}`), "uchastka");
       showRight(defaultRightHTML, "default-view");
+      showUchastkaMarkers();
       return;
     }
 
     if (key === "radar") {
       createLeftButtons(Array.from({ length: 14 }, (_, i) => `Uchastka ${i + 1}`), "uchastka");
       showRight(renderRadarRight());
+      showRadarMarkers();
       return;
     }
 
