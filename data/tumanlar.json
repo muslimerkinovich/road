@@ -1,0 +1,50 @@
+{
+  "list": [
+    "Sirdaryo tumani",
+    "Mirzaobod tumani",
+    "Oqoltin tumani",
+    "Sardoba tumani",
+    "Yangiyer shahar",
+    "Xovos tumani",
+    "Boyovut tumani",
+    "Sayxunobod tumani",
+    "Guliston tumani",
+    "Guliston shahar"
+  ],
+  "overlayMap": {
+    "Sirdaryo tumani":   "map/sirdaryo-t.svg",
+    "Mirzaobod tumani":  "map/mirzaobod-t.svg",
+    "Oqoltin tumani":    "map/oqoltin-t.svg",
+    "Sardoba tumani":    "map/sardoba-t.svg",
+    "Sayxunobod tumani": "map/sayxunobod-t.svg",
+    "Guliston tumani":   "map/guliston-t.svg",
+    "Guliston shahar":   "map/guliston-sh.svg",
+    "Yangiyer shahar":   "map/yangiyer-sh.svg",
+    "Xovos tumani":      "map/xovos-t.svg",
+    "Boyovut tumani":    "map/boyovut-t.svg"
+  },
+  "wordData": {
+    "Sirdaryo tumani":   { "xalqaro": 23, "davlat": null, "maxalliy": 8,  "ichki": 4  },
+    "Sayxunobod tumani": { "xalqaro": 3,  "davlat": null, "maxalliy": null,"ichki": 2  },
+    "Mirzaobod tumani":  { "xalqaro": 22, "davlat": 4,   "maxalliy": null,"ichki": 4  },
+    "Oqoltin tumani":    { "xalqaro": 21, "davlat": 4,   "maxalliy": null,"ichki": null},
+    "Sardoba tumani":    { "xalqaro": 2,  "davlat": 4,   "maxalliy": 1,  "ichki": 3  },
+    "Guliston shahar":   { "xalqaro": 1,  "davlat": null, "maxalliy": null,"ichki": 15 },
+    "Guliston tumani":   { "xalqaro": null,"davlat": 3,  "maxalliy": 1,  "ichki": null},
+    "Yangiyer shahar":   { "xalqaro": 3,  "davlat": 1,   "maxalliy": null,"ichki": 8  },
+    "Xovos tumani":      { "xalqaro": 2,  "davlat": 5,   "maxalliy": 4,  "ichki": 3  },
+    "Boyovut tumani":    { "xalqaro": null,"davlat": 4,  "maxalliy": 4,  "ichki": 3  }
+  },
+  "totals": {
+    "Sirdaryo tumani":   35,
+    "Mirzaobod tumani":  30,
+    "Oqoltin tumani":    25,
+    "Sardoba tumani":    10,
+    "Yangiyer shahar":   12,
+    "Xovos tumani":      14,
+    "Boyovut tumani":    11,
+    "Sayxunobod tumani": 5,
+    "Guliston tumani":   4,
+    "Guliston shahar":   16
+  }
+}

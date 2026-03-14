@@ -1,0 +1,58 @@
+{
+  "xalqaro": {
+    "title": "2025 YIL",
+    "totalLine": "Xalqaro ahamiyatga ega yo'llarda <br> sodir etilgan viloyat hududida yo'l-transport <br> xodisalari haqida ma'lumot",
+    "totalValue": "umumiy 77 ta yoki 47,5 foiz",
+    "byTuman": {
+      "Sirdaryo tumani":   23,
+      "Sayxunobod tumani": 3,
+      "Mirzaobod tumani":  22,
+      "Oqoltin tumani":    21,
+      "Sardoba tumani":    2,
+      "Guliston shahar":   1,
+      "Yangiyer shahar":   3,
+      "Xovos tumani":      2
+    }
+  },
+  "davlat": {
+    "title": "2025 YIL",
+    "totalLine": "Viloyat hududining Davlat ahamiyatidagi <br> yo'llarida sodir etilgan yo'l-transport <br> xodisalari haqida ma'lumot",
+    "totalValue": "Jami 25 ta yoki 15,4 foiz",
+    "byTuman": {
+      "Mirzaobod tumani": 4,
+      "Oqoltin tumani":   4,
+      "Sardoba tumani":   4,
+      "Guliston tumani":  3,
+      "Yangiyer shahar":  1,
+      "Xovos tumani":     5,
+      "Boyovut tumani":   4
+    }
+  },
+  "maxalliy": {
+    "title": "2025 YIL",
+    "totalLine": "Viloyat hududining Mahalliy ahamiyatga ega <br> yo'llarida sodir etilgan yo'l-transport <br> xodisalari haqida ma'lumot",
+    "totalValue": "Jami 18 ta yoki 11,1 foiz",
+    "byTuman": {
+      "Sirdaryo tumani": 8,
+      "Sardoba tumani":  1,
+      "Xovos tumani":    4,
+      "Boyovut tumani":  4,
+      "Guliston tumani": 1
+    }
+  },
+  "ichki": {
+    "title": "2025 YIL",
+    "totalLine": "Viloyat hududining Ichki xo'jalik yo'llarida <br> sodir etilgan yo'l-transport xodisalari <br> haqida ma'lumot",
+    "totalValue": "42 tasi yoki 26 foizi",
+    "byTuman": {
+      "Sirdaryo tumani":   4,
+      "Sayxunobod tumani": 2,
+      "Mirzaobod tumani":  4,
+      "Sardoba tumani":    3,
+      "Guliston shahar":   15,
+      "Yangiyer shahar":   8,
+      "Xovos tumani":      3,
+      "Boyovut tumani":    3
+    }
+  }
+}

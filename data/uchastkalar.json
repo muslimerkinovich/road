@@ -1,0 +1,239 @@
+[
+  {
+    "id": 1,
+    "title": "1-UCHASTKA",
+    "location": "Sirdaryo tumani, 20V036 avtomobil yo'lining 1–7 km oralig'i",
+    "coordinates": [40.90892294698062, 68.65389370363934],
+    "image": "photo/uchastka1.png",
+    "actions": [
+      "Qo'shimcha yo'l belgilari o'rnatish",
+      "Piyodalar o'tish joyini chizish",
+      "Qoidabuzarliklarni aniqlovchi kameralar o'rnatish"
+    ],
+    "yth": [
+      "20V036 avtomobil yo'lining 1 km.da, 266-m 2-q. (To'siqqa urilish)",
+      "20V036 avtomobil yo'lining 1 km.da, 266-m 1-q. (Piyoda)",
+      "20V036 avtomobil yo'lining 7 km.da, 266-m 3-q. (Ag'darilish)"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "2-UCHASTKA",
+    "location": "Sirdaryo tumani, M-34 avtomobil yo'lining 71–75 km oralig'i",
+    "coordinates": [40.785883214966034, 68.67956994905401],
+    "image": "photo/uchastka2.png",
+    "actions": [
+      "Radar qurilmasini o'rnatish",
+      "Shovqin chiziqlari chizish",
+      "Qo'shimcha YPX ekipajini biriktirish"
+    ],
+    "yth": [
+      "M-34 avtomobil yo'lining 71 km.da, 266-m 3-q. (To'siqqa urilish)",
+      "M-34 avtomobil yo'lining 72 km.da, 266-m 1-q. (Ag'darilish)",
+      "M-34 avtomobil yo'lining 73 km.da, 266-m 1-q. (To'qnashuv)",
+      "M-34 avtomobil yo'lining 75 km.da, 266-m 1-q. (Turgan t/v urilish)"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "3-UCHASTKA",
+    "location": "Sirdaryo tumani, M-34 avtomobil yo'lining 77–81 km oralig'i",
+    "coordinates": [40.71781480613312, 68.69633122435334],
+    "image": "photo/uchastka3.png",
+    "actions": [
+      "Yoritish tizimini yaxshilash",
+      "Piyodalar uchun ogohlantiruvchi belgilar o'rnatish",
+      "Qo'shimcha patrul tashkil etish"
+    ],
+    "yth": [
+      "M-34 avtomobil yo'lining 77 km.da, 266-m 1-q. (Piyoda)",
+      "M-34 avtomobil yo'lining 78 km.da, 266-m 1-q. (Piyoda)",
+      "M-34 avtomobil yo'lining 81 km.da, 266-m 1-q. (Piyoda)",
+      "M-34 avtomobil yo'lining 81 km.da, 266-m 1-q. (Turgan t/v urilish)"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "4-UCHASTKA",
+    "location": "A-373a avtomobil yo'lining 94–99 km oralig'i",
+    "coordinates": [40.59757236934024, 68.68791371762369],
+    "image": "photo/uchastka4.png",
+    "actions": [
+      "Qo'shimcha yo'l belgilari o'rnatish",
+      "Yo'l yotiq chiziqlarini qayta chizish",
+      "Radar qurilmasini o'rnatish"
+    ],
+    "yth": [
+      "A-373a avtomobil yo'lining 94 km.da, 266-m 1-q. (To'qnashuv)",
+      "A-373a avtomobil yo'lining 98 km.da, 266-m 1-q. (Turgan t/v urilish)",
+      "A-373a avtomobil yo'lining 98 km.da, 266-m 1-q. (To'qnashuv)",
+      "A-373a avtomobil yo'lining 99 km.da, 266-m 3-q. (Turgan tv/ga urilish)"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "5-UCHASTKA",
+    "location": "M-34 avtomobil yo'lining 92–93 km oralig'i",
+    "coordinates": [40.59140173212389, 68.73501275926971],
+    "image": "photo/uchastka5.png",
+    "actions": [
+      "Shovqin chiziqlari chizish",
+      "Qo'shimcha ogohlantiruvchi belgilar o'rnatish"
+    ],
+    "yth": [
+      "M-34 avtomobil yo'lining 92 km.da, 266-m 1-q. (To'qnashuv)",
+      "M-34 avtomobil yo'lining 93 km.da, 266-m 2-q. (Ag'darilish)"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "6-UCHASTKA",
+    "location": "M-39 avtomobil yo'lining 907–910 km oralig'i",
+    "coordinates": [40.51038015456334, 68.49799827470059],
+    "image": "photo/uchastka6.png",
+    "actions": [
+      "Kameralar o'rnatish",
+      "Yoritgichlar o'rnatish",
+      "Yo'l belgilarini yangilash"
+    ],
+    "yth": [
+      "M-39 avtomobil yo'lining 907 km.da, 266-m 1-q. (To'qnashuv)",
+      "M-39 avtomobil yo'lining 909 km.da, 266-m 1-q. (Piyoda)",
+      "M-39 avtomobil yo'lining 910 km.da, 266-m 2-q. (To'siqqa urilish)"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "7-UCHASTKA",
+    "location": "M-39 avtomobil yo'lining 920–924 km oralig'i",
+    "coordinates": [40.54658029016686, 68.3568242922047],
+    "image": "photo/uchastka7.png",
+    "actions": [
+      "Shovqin chiziqlari chizish",
+      "Qo'shimcha yo'l belgilari o'rnatish"
+    ],
+    "yth": [
+      "M-39 avtomobil yo'lining 920 km.da, 266-m 2-q. (To'siqqa urilish)",
+      "M-39 avtomobil yo'lining 921 km.da, 266-m 1-q. (To'qnashuv)",
+      "M-39 avtomobil yo'lining 924 km.da, 266-m 2-q. (Turgan t/v urilish)"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "8-UCHASTKA",
+    "location": "M-34 avtomobil yo'lining 106–112 km oralig'i",
+    "coordinates": [40.41580872160377, 68.78589823450442],
+    "image": "photo/uchastka8.png",
+    "actions": [
+      "Radar qurilmasini o'rnatish",
+      "Piyodalar harakati bo'yicha nazoratni kuchaytirish",
+      "Qo'shimcha belgilar o'rnatish"
+    ],
+    "yth": [
+      "M-34 avtomobil yo'lining 106 km.da, 266-m 1-q. (To'qnashuv)",
+      "M-34 avtomobil yo'lining 107 km.da, 266-m 2-q. (To'siqqa urilish)",
+      "M-34 avtomobil yo'lining 108 km.da, 266-m 1-q. (Velosiped)",
+      "M-34 avtomobil yo'lining 110 km.da, 266-m 1-q. (Piyoda)",
+      "M-34 avtomobil yo'lining 112 km.da, 266-m 1-q. (To'qnashuv)"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "9-UCHASTKA",
+    "location": "M-39 avtomobil yo'lining 934–935 km oralig'i",
+    "coordinates": [40.491636438657515, 68.29829553202349],
+    "image": "photo/uchastka9.png",
+    "actions": [
+      "Kuzatuv kameralarini o'rnatish",
+      "Yo'l qoplamasini yangilash"
+    ],
+    "yth": [
+      "M-39 avtomabil yo'lining 934-935-km.da, 266-m 1-q. (To'qnashuv)",
+      "M-39 avtomabil yo'lining 935-km.da, 266-m 1-q. (To'qnashuv)"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "10-UCHASTKA",
+    "location": "D-045 avtomobil yo'lining 5–8 km oralig'i",
+    "coordinates": [40.29579886246098, 68.40798588253125],
+    "image": "photo/uchastka10.png",
+    "actions": [
+      "Qo'shimcha yo'l belgilari o'rnatish",
+      "Shovqin chiziqlari chizish"
+    ],
+    "yth": [
+      "D-045 avtomobil yo'lining 5-km.da, 266-m 1-q. (To'qnashuv)",
+      "D-045 avtomobil yo'lining 8-km.da, 266-m 2-q. (Ag'darilish)"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "11-UCHASTKA",
+    "location": "M-34 avtomobil yo'lining 129–130 km oralig'i",
+    "coordinates": [40.258372059345746, 68.8332200691436],
+    "image": "photo/uchastka11.png",
+    "actions": [
+      "Piyodalar o'tish joylarini yaxshilash",
+      "Radar qurilmasini o'rnatish"
+    ],
+    "yth": [
+      "M-34 avtomobil yo'lining 130 km.da, 266-m 2-q. (Piyoda)",
+      "M-34 avtomobil yo'lining 130 km.da, 266-m 1-q. (Piyoda)",
+      "M-34 avtomobil yo'lining 129 km.da, 266-m 1-q. (Turgan t/v urilish)"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "12-UCHASTKA",
+    "location": "Xovos tumani, Qayirma MFY, 20 V021 avtomobil yo'lining 1-7 km.lari oralig'i yo'lning uzluksiz qismi",
+    "coordinates": [40.23827483991927, 68.84446183363283],
+    "image": "photo/uchastka12.png",
+    "actions": [
+      "Qo'shimcha yo'l belgilari o'rnatish",
+      "Yo'l yotiq chiziqlarini qaytadan chizdirish",
+      "Radar qurilmasini o'rnatish",
+      "Qo'shimcha YPX ekipajini biriktirish"
+    ],
+    "yth": [
+      "20V021 avtomobil yo'lining 1 km.da, 266-m 1-q. (To'qnashuv)",
+      "20V021 avtomobil yo'lining 7 km.da, 266-m 1-q. (To'qnashuv)",
+      "20V021 avtomobil yo'lining 2 km.da, 266-m 1-q. (Ot arava)",
+      "20V021 avtomobil yo'lining 2 km.da, 266-m 1-q. (To'qnashuv)"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "13-UCHASTKA",
+    "location": "Boyovut tumani, 2-Boyovut MFY, D040 va 20V029 avtomobil yo'llari tutashmasi",
+    "coordinates": [40.445793836249656, 68.89516892606599],
+    "image": "photo/uchastka13.png",
+    "actions": [
+      "Quyosh panelli yoritgichlar o'rnatish",
+      "Qo'shimcha yo'l belgilari o'rnatish",
+      "Qoidabuzarliklarni aniqlovchi kameralar o'rnatish",
+      "Shovqin chiziqlari chizish"
+    ],
+    "yth": [
+      "D040 va 20V029 avtomobil yo'llari tutashmasi 266-m 2-q. (Piyoda)",
+      "D040 va 20V029 avtomobil yo'llari tutashmasi 266-m 2-q. (To'qnashuv)"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "14-UCHASTKA",
+    "location": "Boyovut tumani, Boyovut shaharchasi, D040 avtomobil yo'lining 43-46 km. oralig'i, yo'lning uzluksiz qismi",
+    "coordinates": [40.31322576473741, 69.0187958706338],
+    "image": "photo/uchastka14.png",
+    "actions": [
+      "Radar qurilmasini o'rnatish",
+      "Quyosh panelli yoritgichlar o'rnatish",
+      "Shovqin chiziqlari chizish",
+      "Qo'shimcha yo'l belgilari o'rnatish"
+    ],
+    "yth": [
+      "D040 avtomobil yo'lining 43-46 km oralig'i, 266-m 1-q. (To'qnashuv)",
+      "D040 avtomobil yo'lining 45 km.da, 266-m 2-q. (Ag'darilish)"
+    ]
+  }
+]
