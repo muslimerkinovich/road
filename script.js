@@ -5,6 +5,7 @@
 let gMapInstance = null;
 const districtPolygons = []; // { name, polygon, bounds, center, color }
 const uchastkaMarkers = [];  // Google Maps Marker instances for uchastkalar
+const crashMarkers = [];     // Google Maps Marker instances for individual crashes
 const radarMarkers = [];     // Google Maps Marker instances for radars
 let onDistrictClick = null;  // set by DOMContentLoaded once app is ready
 let onUchastkaClick = null;  // set by DOMContentLoaded once app is ready
@@ -66,6 +67,14 @@ function showUchastkaMarkers() {
 
 function hideUchastkaMarkers() {
   uchastkaMarkers.forEach((m) => m.setMap(null));
+}
+
+function showCrashMarkers() {
+  crashMarkers.forEach((m) => m.setMap(gMapInstance));
+}
+
+function hideCrashMarkers() {
+  crashMarkers.forEach((m) => m.setMap(null));
 }
 
 function selectDistrictOnMap(tumanName) {
@@ -271,6 +280,26 @@ window.initMap = async function () {
     });
     // Default tab is "Umumiy" — show uchastka markers immediately
     showUchastkaMarkers();
+
+    // ---- Crash markers (icon/crash.png, one per crash entry) ----
+    uchastkalarData.forEach((u) => {
+      (u.crashes || []).forEach((c) => {
+        if (!c.coordinates || c.coordinates.length < 2) return;
+        const [lat, lng] = c.coordinates;
+        const marker = new google.maps.Marker({
+          position: { lat, lng },
+          map: gMapInstance,
+          icon: {
+            url: "icon/crash.png",
+            scaledSize: new google.maps.Size(24, 24),
+            anchor: new google.maps.Point(12, 12),
+          },
+          title: `${c.name} — ${c.type}`,
+          zIndex: 8,
+        });
+        crashMarkers.push(marker);
+      });
+    });
   }
 
   // ---- Radar markers (hidden by default, shown on "Radar" tab) ----
@@ -518,10 +547,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     const item = uchastkalar[i - 1];
     if (!item) return;
 
+    const crashes = item.crashes || [];
     const ythHTML =
-      item.yth.length > 0
+      crashes.length > 0
         ? `<ul class="uchastka-yth">
-            ${item.yth.map((x) => `<li>${escapeHTML(x)}</li>`).join("")}
+            ${crashes.map((c) => `<li>
+              <span class="crash-name">${escapeHTML(c.name)}</span>
+              <span class="crash-meta">${escapeHTML(c.crimianl_code)} — ${escapeHTML(c.type)}</span>
+            </li>`).join("")}
            </ul>`
         : "";
 
@@ -608,7 +641,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (mode === "uchastka") {
         const num = idx + 1;
         btn.dataset.uchastka = String(num);
-        const count = (uchastkalar[num - 1]?.yth || []).length;
+        const count = (uchastkalar[num - 1]?.crashes || []).length;
         btn.innerHTML = `
           <span class="left-btn-dot"></span>
           <span class="left-btn-name">${num}-UCHASTKA</span>
@@ -646,6 +679,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     hideUchastkaMapOverlay();
     hideRadarMarkers();
     hideUchastkaMarkers();
+    hideCrashMarkers();
     resetMapToUmumiy(); // zoom out to full region on every top-tab tap
     bottomMapButtons.forEach((b) => b.classList.remove("active"));
     const activeBtn = document.querySelector(`.button-container .btn[data-map="${key}"]`);
@@ -665,8 +699,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       return;
     }
 
+    // xalqaro, davlat, maxalliy, ichki — show crash markers
     createLeftButtons(tumanList, "tuman");
     showRight(renderCategoryRight(key));
+    showCrashMarkers();
   }
 
   // =====================

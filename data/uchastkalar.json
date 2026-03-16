@@ -3,191 +3,507 @@
     "id": 1,
     "title": "1-UCHASTKA",
     "location": "Sirdaryo tumani, 20V036 avtomobil yo'lining 1–7 km oralig'i",
-    "coordinates": [40.90892294698062, 68.65389370363934],
+    "coordinates": [
+      40.90892294698062,
+      68.65389370363934
+    ],
     "image": "photo/uchastka1.png",
     "actions": [
       "Qo'shimcha yo'l belgilari o'rnatish",
       "Piyodalar o'tish joyini chizish",
       "Qoidabuzarliklarni aniqlovchi kameralar o'rnatish"
     ],
-    "yth": [
-      "20V036 avtomobil yo'lining 1 km.da, 266-m 2-q. (To'siqqa urilish)",
-      "20V036 avtomobil yo'lining 1 km.da, 266-m 1-q. (Piyoda)",
-      "20V036 avtomobil yo'lining 7 km.da, 266-m 3-q. (Ag'darilish)"
+    "crashes": [
+      {
+        "name": "20V036 avtomobil yo'lining 1 km.da",
+        "crimianl_code": "266-m 2-q.",
+        "type": "To'siqqa urilish",
+        "coordinates": [
+          40.891451,
+          68.651362
+        ]
+      },
+      {
+        "name": "20V036 avtomobil yo'lining 1 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "Piyoda",
+        "coordinates": [
+          40.91183,
+          68.65643
+        ]
+      },
+      {
+        "name": "20V036 avtomobil yo'lining 7 km.da",
+        "crimianl_code": "266-m 3-q.",
+        "type": "Ag'darilish",
+        "coordinates": [
+          40.886786,
+          68.651013
+        ]
+      }
     ]
   },
   {
     "id": 2,
     "title": "2-UCHASTKA",
     "location": "Sirdaryo tumani, M-34 avtomobil yo'lining 71–75 km oralig'i",
-    "coordinates": [40.785883214966034, 68.67956994905401],
+    "coordinates": [
+      40.785883214966034,
+      68.67956994905401
+    ],
     "image": "photo/uchastka2.png",
     "actions": [
       "Radar qurilmasini o'rnatish",
       "Shovqin chiziqlari chizish",
       "Qo'shimcha YPX ekipajini biriktirish"
     ],
-    "yth": [
-      "M-34 avtomobil yo'lining 71 km.da, 266-m 3-q. (To'siqqa urilish)",
-      "M-34 avtomobil yo'lining 72 km.da, 266-m 1-q. (Ag'darilish)",
-      "M-34 avtomobil yo'lining 73 km.da, 266-m 1-q. (To'qnashuv)",
-      "M-34 avtomobil yo'lining 75 km.da, 266-m 1-q. (Turgan t/v urilish)"
+    "crashes": [
+      {
+        "name": "M-34 avtomobil yo'lining 71 km.da",
+        "crimianl_code": "266-m 3-q.",
+        "type": "To'siqqa urilish",
+        "coordinates": [
+          40.784393,
+          68.620873
+        ]
+      },
+      {
+        "name": "M-34 avtomobil yo'lining 72 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "Ag'darilish",
+        "coordinates": [
+          40.452363,
+          68.773583
+        ]
+      },
+      {
+        "name": "M-34 avtomobil yo'lining 73 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "To'qnashuv",
+        "coordinates": [
+          40.770418,
+          68.682197
+        ]
+      },
+      {
+        "name": "M-34 avtomobil yo'lining 75 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "Turgan t/v urilish",
+        "coordinates": [
+          40.770474,
+          68.682552
+        ]
+      }
     ]
   },
   {
     "id": 3,
     "title": "3-UCHASTKA",
     "location": "Sirdaryo tumani, M-34 avtomobil yo'lining 77–81 km oralig'i",
-    "coordinates": [40.71781480613312, 68.69633122435334],
+    "coordinates": [
+      40.71781480613312,
+      68.69633122435334
+    ],
     "image": "photo/uchastka3.png",
     "actions": [
       "Yoritish tizimini yaxshilash",
       "Piyodalar uchun ogohlantiruvchi belgilar o'rnatish",
       "Qo'shimcha patrul tashkil etish"
     ],
-    "yth": [
-      "M-34 avtomobil yo'lining 77 km.da, 266-m 1-q. (Piyoda)",
-      "M-34 avtomobil yo'lining 78 km.da, 266-m 1-q. (Piyoda)",
-      "M-34 avtomobil yo'lining 81 km.da, 266-m 1-q. (Piyoda)",
-      "M-34 avtomobil yo'lining 81 km.da, 266-m 1-q. (Turgan t/v urilish)"
+    "crashes": [
+      {
+        "name": "M-34 avtomobil yo'lining 77 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "Piyoda",
+        "coordinates": [
+          40.778877,
+          68.680719
+        ]
+      },
+      {
+        "name": "M-34 avtomobil yo'lining 78 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "Piyoda",
+        "coordinates": [
+          40.839926,
+          68.671338
+        ]
+      },
+      {
+        "name": "M-34 avtomobil yo'lining 81 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "Piyoda",
+        "coordinates": [
+          40.636425,
+          68.721163
+        ]
+      },
+      {
+        "name": "M-34 avtomobil yo'lining 81 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "Turgan t/v urilish",
+        "coordinates": [
+          40.842699,
+          68.670708
+        ]
+      }
     ]
   },
   {
     "id": 4,
     "title": "4-UCHASTKA",
-    "location": "A-373a avtomobil yo'lining 94–99 km oralig'i",
-    "coordinates": [40.59757236934024, 68.68791371762369],
+    "location": "M-373 avtomobil yo'lining 94–99 km oralig'i",
+    "coordinates": [
+      40.59757236934024,
+      68.68791371762369
+    ],
     "image": "photo/uchastka4.png",
     "actions": [
       "Qo'shimcha yo'l belgilari o'rnatish",
       "Yo'l yotiq chiziqlarini qayta chizish",
       "Radar qurilmasini o'rnatish"
     ],
-    "yth": [
-      "A-373a avtomobil yo'lining 94 km.da, 266-m 1-q. (To'qnashuv)",
-      "A-373a avtomobil yo'lining 98 km.da, 266-m 1-q. (Turgan t/v urilish)",
-      "A-373a avtomobil yo'lining 98 km.da, 266-m 1-q. (To'qnashuv)",
-      "A-373a avtomobil yo'lining 99 km.da, 266-m 3-q. (Turgan tv/ga urilish)"
+    "crashes": [
+      {
+        "name": "M-373 avtomobil yo'lining 94 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "To'qnashuv",
+        "coordinates": [
+          40.858013,
+          68.66556
+        ]
+      },
+      {
+        "name": "M-373 avtomobil yo'lining 98 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "Turgan t/v urilish",
+        "coordinates": [
+          40.708056,
+          68.698361
+        ]
+      },
+      {
+        "name": "M-373 avtomobil yo'lining 98 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "To'qnashuv",
+        "coordinates": [
+          40.850508,
+          68.654201
+        ]
+      },
+      {
+        "name": "M-373 avtomobil yo'lining 99 km.da",
+        "crimianl_code": "266-m 3-q.",
+        "type": "Turgan tv/ga urilish",
+        "coordinates": [
+          40.785868,
+          68.679356
+        ]
+      }
     ]
   },
   {
     "id": 5,
     "title": "5-UCHASTKA",
     "location": "M-34 avtomobil yo'lining 92–93 km oralig'i",
-    "coordinates": [40.59140173212389, 68.73501275926971],
+    "coordinates": [
+      40.59140173212389,
+      68.73501275926971
+    ],
     "image": "photo/uchastka5.png",
     "actions": [
       "Shovqin chiziqlari chizish",
       "Qo'shimcha ogohlantiruvchi belgilar o'rnatish"
     ],
-    "yth": [
-      "M-34 avtomobil yo'lining 92 km.da, 266-m 1-q. (To'qnashuv)",
-      "M-34 avtomobil yo'lining 93 km.da, 266-m 2-q. (Ag'darilish)"
+    "crashes": [
+      {
+        "name": "M-34 avtomobil yo'lining 92 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "To'qnashuv",
+        "coordinates": [
+          40.591001,
+          68.735341
+        ]
+      },
+      {
+        "name": "M-34 avtomobil yo'lining 93 km.da",
+        "crimianl_code": "266-m 2-q.",
+        "type": "Ag'darilish",
+        "coordinates": [
+          40.574926,
+          68.740137
+        ]
+      }
     ]
   },
   {
     "id": 6,
     "title": "6-UCHASTKA",
     "location": "M-39 avtomobil yo'lining 907–910 km oralig'i",
-    "coordinates": [40.51038015456334, 68.49799827470059],
+    "coordinates": [
+      40.51038015456334,
+      68.49799827470059
+    ],
     "image": "photo/uchastka6.png",
     "actions": [
       "Kameralar o'rnatish",
       "Yoritgichlar o'rnatish",
       "Yo'l belgilarini yangilash"
     ],
-    "yth": [
-      "M-39 avtomobil yo'lining 907 km.da, 266-m 1-q. (To'qnashuv)",
-      "M-39 avtomobil yo'lining 909 km.da, 266-m 1-q. (Piyoda)",
-      "M-39 avtomobil yo'lining 910 km.da, 266-m 2-q. (To'siqqa urilish)"
+    "crashes": [
+      {
+        "name": "M-39 avtomobil yo'lining 907 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "To'qnashuv",
+        "coordinates": [
+          40.556557,
+          68.365941
+        ]
+      },
+      {
+        "name": "M-39 avtomobil yo'lining 909 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "Piyoda",
+        "coordinates": [
+          40.56113,
+          68.370736
+        ]
+      },
+      {
+        "name": "M-39 avtomobil yo'lining 910 km.da",
+        "crimianl_code": "266-m 2-q.",
+        "type": "To'siqqa urilish",
+        "coordinates": [
+          40.560806,
+          68.383673
+        ]
+      }
     ]
   },
   {
     "id": 7,
     "title": "7-UCHASTKA",
     "location": "M-39 avtomobil yo'lining 920–924 km oralig'i",
-    "coordinates": [40.54658029016686, 68.3568242922047],
+    "coordinates": [
+      40.54658029016686,
+      68.3568242922047
+    ],
     "image": "photo/uchastka7.png",
     "actions": [
       "Shovqin chiziqlari chizish",
       "Qo'shimcha yo'l belgilari o'rnatish"
     ],
-    "yth": [
-      "M-39 avtomobil yo'lining 920 km.da, 266-m 2-q. (To'siqqa urilish)",
-      "M-39 avtomobil yo'lining 921 km.da, 266-m 1-q. (To'qnashuv)",
-      "M-39 avtomobil yo'lining 924 km.da, 266-m 2-q. (Turgan t/v urilish)"
+    "crashes": [
+      {
+        "name": "M-39 avtomobil yo'lining 920 km.da",
+        "crimianl_code": "266-m 2-q.",
+        "type": "To'siqqa urilish",
+        "coordinates": [
+          40.542909,
+          68.415972
+        ]
+      },
+      {
+        "name": "M-39 avtomobil yo'lining 921 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "To'qnashuv",
+        "coordinates": [
+          40.452594,
+          68.774182
+        ]
+      },
+      {
+        "name": "M-39 avtomobil yo'lining 924 km.da",
+        "crimianl_code": "266-m 2-q.",
+        "type": "Turgan t/v urilish",
+        "coordinates": [
+          40.518382,
+          68.329914
+        ]
+      }
     ]
   },
   {
     "id": 8,
     "title": "8-UCHASTKA",
     "location": "M-34 avtomobil yo'lining 106–112 km oralig'i",
-    "coordinates": [40.41580872160377, 68.78589823450442],
+    "coordinates": [
+      40.41580872160377,
+      68.78589823450442
+    ],
     "image": "photo/uchastka8.png",
     "actions": [
       "Radar qurilmasini o'rnatish",
       "Piyodalar harakati bo'yicha nazoratni kuchaytirish",
       "Qo'shimcha belgilar o'rnatish"
     ],
-    "yth": [
-      "M-34 avtomobil yo'lining 106 km.da, 266-m 1-q. (To'qnashuv)",
-      "M-34 avtomobil yo'lining 107 km.da, 266-m 2-q. (To'siqqa urilish)",
-      "M-34 avtomobil yo'lining 108 km.da, 266-m 1-q. (Velosiped)",
-      "M-34 avtomobil yo'lining 110 km.da, 266-m 1-q. (Piyoda)",
-      "M-34 avtomobil yo'lining 112 km.da, 266-m 1-q. (To'qnashuv)"
+    "crashes": [
+      {
+        "name": "M-34 avtomobil yo'lining 106 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "To'qnashuv",
+        "coordinates": [
+          40.59801,
+          68.588687
+        ]
+      },
+      {
+        "name": "M-34 avtomobil yo'lining 107 km.da",
+        "crimianl_code": "266-m 2-q.",
+        "type": "To'siqqa urilish",
+        "coordinates": [
+          40.470329,
+          68.771809
+        ]
+      },
+      {
+        "name": "M-34 avtomobil yo'lining 108 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "Velosiped",
+        "coordinates": [
+          40.475827,
+          68.77005
+        ]
+      },
+      {
+        "name": "M-34 avtomobil yo'lining 110 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "Piyoda",
+        "coordinates": [
+          40.435146,
+          68.780303
+        ]
+      },
+      {
+        "name": "M-34 avtomobil yo'lining 112 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "Piyoda",
+        "coordinates": [
+          40.407651,
+          68.788453
+        ]
+      }
     ]
   },
   {
     "id": 9,
     "title": "9-UCHASTKA",
     "location": "M-39 avtomobil yo'lining 934–935 km oralig'i",
-    "coordinates": [40.491636438657515, 68.29829553202349],
+    "coordinates": [
+      40.491636438657515,
+      68.29829553202349
+    ],
     "image": "photo/uchastka9.png",
     "actions": [
       "Kuzatuv kameralarini o'rnatish",
       "Yo'l qoplamasini yangilash"
     ],
-    "yth": [
-      "M-39 avtomabil yo'lining 934-935-km.da, 266-m 1-q. (To'qnashuv)",
-      "M-39 avtomabil yo'lining 935-km.da, 266-m 1-q. (To'qnashuv)"
+    "crashes": [
+      {
+        "name": "M-39 avtomabil yo'lining 934-km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "To'qnashuv",
+        "coordinates": [
+          40.446656,
+          68.244498
+        ]
+      },
+      {
+        "name": "M-39 avtomabil yo'lining 935-km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "To'qnashuv",
+        "coordinates": [
+          40.383781,
+          68.400231
+        ]
+      }
     ]
   },
   {
     "id": 10,
     "title": "10-UCHASTKA",
     "location": "D-045 avtomobil yo'lining 5–8 km oralig'i",
-    "coordinates": [40.29579886246098, 68.40798588253125],
+    "coordinates": [
+      40.29579886246098,
+      68.40798588253125
+    ],
     "image": "photo/uchastka10.png",
     "actions": [
       "Qo'shimcha yo'l belgilari o'rnatish",
       "Shovqin chiziqlari chizish"
     ],
-    "yth": [
-      "D-045 avtomobil yo'lining 5-km.da, 266-m 1-q. (To'qnashuv)",
-      "D-045 avtomobil yo'lining 8-km.da, 266-m 2-q. (Ag'darilish)"
+    "crashes": [
+      {
+        "name": "D-045 avtomobil yo'lining 5-km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "To'qnashuv",
+        "coordinates": [
+          40.304854,
+          68.408007
+        ]
+      },
+      {
+        "name": "D-045 avtomobil yo'lining 8-km.da",
+        "crimianl_code": "266-m 2-q.",
+        "type": "Ag'darilish",
+        "coordinates": [
+          40.340759,
+          68.408634
+        ]
+      }
     ]
   },
   {
     "id": 11,
     "title": "11-UCHASTKA",
     "location": "M-34 avtomobil yo'lining 129–130 km oralig'i",
-    "coordinates": [40.258372059345746, 68.8332200691436],
+    "coordinates": [
+      40.258372059345746,
+      68.8332200691436
+    ],
     "image": "photo/uchastka11.png",
     "actions": [
       "Piyodalar o'tish joylarini yaxshilash",
       "Radar qurilmasini o'rnatish"
     ],
-    "yth": [
-      "M-34 avtomobil yo'lining 130 km.da, 266-m 2-q. (Piyoda)",
-      "M-34 avtomobil yo'lining 130 km.da, 266-m 1-q. (Piyoda)",
-      "M-34 avtomobil yo'lining 129 km.da, 266-m 1-q. (Turgan t/v urilish)"
+    "crashes": [
+      {
+        "name": "M-34 avtomobil yo'lining 130 km.da",
+        "crimianl_code": "266-m 2-q.",
+        "type": "Piyoda",
+        "coordinates": [
+          40.489142,
+          68.247229
+        ]
+      },
+      {
+        "name": "M-34 avtomobil yo'lining 130 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "Piyoda",
+        "coordinates": [
+          40.522508,
+          68.72745
+        ]
+      },
+      {
+        "name": "M-34 avtomobil yo'lining 129 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "Turgan t/v urilish",
+        "coordinates": [
+          40.388663,
+          68.554804
+        ]
+      }
     ]
   },
   {
     "id": 12,
     "title": "12-UCHASTKA",
-    "location": "Xovos tumani, Qayirma MFY, 20 V021 avtomobil yo'lining 1-7 km.lari oralig'i yo'lning uzluksiz qismi",
-    "coordinates": [40.23827483991927, 68.84446183363283],
+    "location": "Xovos tumani, Qayirma MFY, V021 avtomobil yo'lining 1-7 km.lari oralig'i yo'lning uzluksiz qismi",
+    "coordinates": [
+      40.23827483991927,
+      68.84446183363283
+    ],
     "image": "photo/uchastka12.png",
     "actions": [
       "Qo'shimcha yo'l belgilari o'rnatish",
@@ -195,18 +511,53 @@
       "Radar qurilmasini o'rnatish",
       "Qo'shimcha YPX ekipajini biriktirish"
     ],
-    "yth": [
-      "20V021 avtomobil yo'lining 1 km.da, 266-m 1-q. (To'qnashuv)",
-      "20V021 avtomobil yo'lining 7 km.da, 266-m 1-q. (To'qnashuv)",
-      "20V021 avtomobil yo'lining 2 km.da, 266-m 1-q. (Ot arava)",
-      "20V021 avtomobil yo'lining 2 km.da, 266-m 1-q. (To'qnashuv)"
+    "crashes": [
+      {
+        "name": "V021 avtomobil yo'lining 1 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "To'qnashuv",
+        "coordinates": [
+          40.244489,
+          68.843384
+        ]
+      },
+      {
+        "name": "V021 avtomobil yo'lining 7 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "To'qnashuv",
+        "coordinates": [
+          40.250859,
+          68.905853
+        ]
+      },
+      {
+        "name": "V021 avtomobil yo'lining 2 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "To'qnashuv",
+        "coordinates": [
+          40.253303,
+          68.521737
+        ]
+      },
+      {
+        "name": "V021 avtomobil yo'lining 2 km.da",
+        "crimianl_code": "266-m 1-q.",
+        "type": "To'qnashuv",
+        "coordinates": [
+          40.452402,
+          68.773541
+        ]
+      }
     ]
   },
   {
     "id": 13,
     "title": "13-UCHASTKA",
     "location": "Boyovut tumani, 2-Boyovut MFY, D040 va 20V029 avtomobil yo'llari tutashmasi",
-    "coordinates": [40.445793836249656, 68.89516892606599],
+    "coordinates": [
+      40.445793836249656,
+      68.89516892606599
+    ],
     "image": "photo/uchastka13.png",
     "actions": [
       "Quyosh panelli yoritgichlar o'rnatish",
@@ -214,16 +565,35 @@
       "Qoidabuzarliklarni aniqlovchi kameralar o'rnatish",
       "Shovqin chiziqlari chizish"
     ],
-    "yth": [
-      "D040 va 20V029 avtomobil yo'llari tutashmasi 266-m 2-q. (Piyoda)",
-      "D040 va 20V029 avtomobil yo'llari tutashmasi 266-m 2-q. (To'qnashuv)"
+    "crashes": [
+      {
+        "name": "D040 va 20V029 avtomobil yo'llari tutashmasi",
+        "crimianl_code": "266-m 2-q.",
+        "type": "Piyoda",
+        "coordinates": [
+          40.452399,
+          68.773544
+        ]
+      },
+      {
+        "name": "D040 va 20V029 avtomobil yo'llari tutashmasi",
+        "crimianl_code": "266-m 2-q.",
+        "type": "To'qnashuv",
+        "coordinates": [
+          40.229087,
+          68.838339
+        ]
+      }
     ]
   },
   {
     "id": 14,
     "title": "14-UCHASTKA",
     "location": "Boyovut tumani, Boyovut shaharchasi, D040 avtomobil yo'lining 43-46 km. oralig'i, yo'lning uzluksiz qismi",
-    "coordinates": [40.31322576473741, 69.0187958706338],
+    "coordinates": [
+      40.31322576473741,
+      69.0187958706338
+    ],
     "image": "photo/uchastka14.png",
     "actions": [
       "Radar qurilmasini o'rnatish",
@@ -231,9 +601,25 @@
       "Shovqin chiziqlari chizish",
       "Qo'shimcha yo'l belgilari o'rnatish"
     ],
-    "yth": [
-      "D040 avtomobil yo'lining 43-46 km oralig'i, 266-m 1-q. (To'qnashuv)",
-      "D040 avtomobil yo'lining 45 km.da, 266-m 2-q. (Ag'darilish)"
+    "crashes": [
+      {
+        "name": "D040 avtomobil yo'lining 43-46 km oralig'i",
+        "crimianl_code": "266-m 1-q.",
+        "type": "To'qnashuv",
+        "coordinates": [
+          40.440351,
+          68.803898
+        ]
+      },
+      {
+        "name": "D040 avtomobil yo'lining 43-45 km.da",
+        "crimianl_code": "266-m 2-q.",
+        "type": "Ag'darilish",
+        "coordinates": [
+          40.452399,
+          68.773544
+        ]
+      }
     ]
   }
 ]
